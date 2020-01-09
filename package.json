@@ -1,0 +1,47 @@
+{
+	"name": "workbenchproxy",
+	"publisher": "liquidobsidian",
+	"displayName": "workbenchproxy",
+	"description": "Extended support for EnforceScript on DayZ using a proxy to DayZ Workbench",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.41.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:c"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.workbenchProxy",
+				"title": "Start Workbench Proxy"
+			}
+		]
+	},
+	"gypfile": true,
+	"scripts": {
+		"test": "node ./test/runTest.js",
+		"build": "node-gyp rebuild",
+		"start": "npm run build && node index.js",
+		"clean": "node-gyp clean"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.41.0",
+		"eslint": "^6.6.0",
+		"glob": "^7.1.5",
+		"mocha": "^6.2.2",
+		"typescript": "^3.6.4",
+		"vscode-test": "^1.2.2",
+		"node-gyp": "^6.1.0"
+	},
+	"dependencies": {
+		"node-addon-api": "^2.0.0"
+	}
+}
