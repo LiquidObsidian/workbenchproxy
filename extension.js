@@ -82,6 +82,8 @@ function processErrors(errorList) {
 }
 
 function clearErrors() {
+	let activeEditor = vscode.window.activeTextEditor
+
 	activeEditor.setDecorations(errorDecoration, [])
 	activeEditor.setDecorations(warningDecoration, [])
 	activeEditor.setDecorations(hintDecoration, [])
@@ -144,8 +146,6 @@ async function isDayZProject() {
 }
 
 async function activate(context) {
-	let activeEditor = vscode.window.activeTextEditor
-
 	errorDecoration = vscode.window.createTextEditorDecorationType({
 		//fontStyle: 'italic',
 		gutterIconPath: `${EXTENSIONPATH}\\img\\error.png`,
@@ -174,18 +174,21 @@ async function activate(context) {
 	});
 
 	vscode.window.onDidChangeActiveTextEditor(editor => {
-		activeEditor = editor;
-		//processErrors(errorList)
+		let activeEditor = vscode.window.activeTextEditor
+		processErrors(errorList)
 		doLinting(activeEditor.document)
 	}, null, context.subscriptions);
 
 	vscode.workspace.onDidChangeTextDocument(event => {
+		let activeEditor = vscode.window.activeTextEditor
 		if (activeEditor && event.document === activeEditor.document) {
-			//clearErrors()
+			clearErrors()
 		}
 	}, null, context.subscriptions);
 
 	vscode.workspace.onDidSaveTextDocument(doLinting)
+
+	doLinting()
 }
 
 exports.activate = activate

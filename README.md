@@ -10,13 +10,13 @@
 
 Your DayZ Workbench should already be capable of compiling and reading errors for your project.
 
-## [Download](https://github.com/LiquidObsidian/workbenchproxy/releases/tag/0.0.1)
+## [Download](https://github.com/LiquidObsidian/workbenchproxy/releases)
 
 ## Usage:
 
 **[**PLEASE ENSURE YOUR PROJECT IS SET UP PROPERLY**](https://github.com/maxkunes/Enscript-Workbench-Project-Setup/wiki/3.-Workbench-Configuration)**
 
-> Install the extension (from the vsix file)
+> Install the extension [from the vsix file](https://github.com/LiquidObsidian/workbenchproxy/releases)
 
 > Open VS Code in the ***same folder*** as your **mod project folder** (the one that contains your scripts folder etc.).
 
