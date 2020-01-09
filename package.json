@@ -3,7 +3,7 @@
 	"publisher": "liquidobsidian",
 	"displayName": "workbenchproxy",
 	"description": "Extended support for EnforceScript on DayZ using a proxy to DayZ Workbench",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.41.0"
 	},
