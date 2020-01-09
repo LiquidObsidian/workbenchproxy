@@ -15,6 +15,7 @@ package-lock.json
 *.ipch
 *.tlog
 *.lastbuildstate
+*.vcxproj.FileListAbsolute.txt
 
 WorkbenchProxy/.vs
 

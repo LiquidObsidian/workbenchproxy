@@ -2,11 +2,15 @@
 
 ### A magical tool for linting (actually compiling) your EnforceScript code in VS Code.
 
+![example](https://i.imgur.com/z2m5pdG.gif)
+
 **RECOMMENDED:** 
 
 [Follow this tutorial first before continuing to ensure your project is set up properly.](https://github.com/maxkunes/Enscript-Workbench-Project-Setup/wiki)
 
 Your DayZ Workbench should already be capable of compiling and reading errors for your project.
+
+## [Download](https://github.com/LiquidObsidian/workbenchproxy/releases/tag/0.0.1)
 
 ## Usage:
 
