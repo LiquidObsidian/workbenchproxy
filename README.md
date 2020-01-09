@@ -38,7 +38,7 @@ Your explorer should look like this at this point (example):
 
 ## How does it work?
 
-### The magic of reverse engineering and named pipes.
+### Magic.
 #### I plan to add debugging support in the future. :)
 
 ----
